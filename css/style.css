@@ -1,0 +1,263 @@
+/* =====================
+   BASE / BODY
+===================== */
+html { height: 100%; }
+
+body { 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, sans-serif; 
+    background: #f4f0fa; 
+    transition: background 0.3s ease; 
+}
+
+/* =====================
+   LOGIN PAGE
+===================== */
+#login-page {
+    background: url('../images/library.jpg') center center no-repeat fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uitm-logo {
+    width: 120px;
+    display: block;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+    transition: transform 0.3s ease;
+}
+.uitm-logo:hover { transform: scale(1.05); }
+
+.login-card {
+    background-color: rgba(255,255,255,0.45) !important;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+    transition: all .3s ease;
+}
+.login-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,.3);
+}
+
+/* =====================
+   BUTTONS
+===================== */
+button.btn-purple {
+    background-color: #6f42c1 !important;
+    color: #fff !important;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    transition: all .2s ease;
+}
+button.btn-purple:hover {
+    background-color: #5930a2 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,.2);
+}
+
+.btn-outline-purple {
+    color: #6f42c1;
+    border:1px solid #6f42c1;
+    background:white;
+}
+.btn-outline-purple:hover { background:#f4effa; }
+
+/* =====================
+   INPUTS
+===================== */
+input.form-control {
+    border-radius:6px;
+    transition: border-color .3s ease, box-shadow .3s ease;
+}
+input.form-control:focus {
+    border-color: #6f42c1;
+    box-shadow: 0 0 5px rgba(111,66,193,.5);
+}
+
+/* =====================
+   LAYOUT
+===================== */
+#main-content { flex-grow: 1; min-height:60vh; }
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar-purple {
+    background-color: #6f42c1;
+    transition: background-color .3s ease;
+}
+.navbar-purple .nav-link,
+.navbar-purple .navbar-brand {
+    color:#fff;
+    transition: all .2s ease;
+}
+.navbar-purple .nav-link:hover {
+    color:#dcd3f5;
+    transform: translateY(-2px);
+}
+.navbar-purple .navbar-brand:hover { transform: scale(1.05); }
+
+.navbar-nav .nav-item.ms-3 {
+    display:flex;
+    align-items:center;
+}
+
+/* =====================
+   CARDS
+===================== */
+.card,
+.stat-card {
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,.05);
+    transition: all .2s ease;
+}
+.card:hover,
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow:0 6px 12px rgba(0,0,0,.1);
+}
+
+/* =====================
+   TABLES (LIGHT)
+===================== */
+table th, table td { vertical-align: middle; }
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f5fc;
+}
+.table-striped tbody tr:hover {
+    background-color: #e3d8f8;
+}
+.table-bordered th,
+.table-bordered td {
+    border:1px solid #dcd3f5;
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer-purple {
+    background:#e6e0f7;
+    color:#6f42c1;
+    font-size:.9rem;
+    font-weight:500;
+    transition: all .3s ease;
+}
+.footer-purple:hover { background:#d9cef8; }
+
+/* =====================
+   HEADINGS
+===================== */
+h4,h5,h6 { color:#3e2c76; }
+
+/* =====================
+   DARK MODE (MERGED + CLEAN)
+===================== */
+.dark-mode {
+    background:#1b1b1b !important;
+    color:#eaeaea !important;
+}
+
+/* Navbar */
+.dark-mode .navbar-purple {
+    background:#3a2468 !important;
+}
+.dark-mode .navbar-purple .nav-link,
+.dark-mode .navbar-brand {
+    color:#eaeaea !important;
+}
+.dark-mode .navbar-purple .nav-link:hover {
+    color:#c7b3f8 !important;
+}
+
+/* Cards */
+.dark-mode .card {
+    background:#252525 !important;
+    border:1px solid #333 !important;
+    color:#fff !important;
+}
+
+/* Footer */
+.dark-mode .footer-purple {
+    background:#291d47 !important;
+    color:#eaeaea !important;
+}
+
+/* Buttons */
+.dark-mode .btn-purple {
+    background:#5d32b9 !important;
+}
+.dark-mode .btn-purple:hover {
+    background:#46248e !important;
+}
+.dark-mode .btn-outline-purple {
+    color:#d0b8ff !important;
+    border-color:#9e7ced !important;
+}
+
+/* Inputs */
+.dark-mode input.form-control,
+.dark-mode select.form-select,
+.dark-mode textarea.form-control {
+    background:#222 !important;
+    border:1px solid #555 !important;
+    color:#fff !important;
+}
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder {
+    color:#999 !important;
+}
+
+/* Tables */
+.dark-mode table,
+.dark-mode .table,
+.dark-mode thead th,
+.dark-mode tbody tr,
+.dark-mode td,
+.dark-mode th {
+    background:#2c2c2c !important;
+    color:#fff !important;
+    border-color:#444 !important;
+}
+.dark-mode tbody tr:hover {
+    background:#3a3a3a !important;
+}
+
+/* =====================
+   MODERN CARDS
+===================== */
+.welcome-banner,
+.modern-card {
+    background:linear-gradient(135deg,#6f42c1,#9d6dff);
+    color:white;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(111,66,193,.25);
+}
+
+.dark-mode .modern-card {
+    background:linear-gradient(135deg,#4b2a88,#6a44b9);
+}
+
+.modern-card h2 { font-size:2.7rem; font-weight:700; }
+.icon-lg { font-size:2.8rem; }
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width:767px) {
+    .modern-card h2 { font-size:2.2rem; }
+    .icon-lg { font-size:2.2rem; }
+}
+
+
+
+
+
+
+
